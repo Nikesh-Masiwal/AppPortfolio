@@ -1,50 +1,74 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:id="@+id/toolBar"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+
+        style="@style/CodeFont"
+        android:text="@string/nanodegreeTitles"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="35dp"
+        android:gravity="center"
+        />
 
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
+        style="@style/ButtonStyle"
+
+        android:text="@string/ProjectOne"
+        android:layout_gravity="center_vertical|center_horizontal"
         android:id="@+id/button" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
+        style="@style/ButtonStyle"
+
+        android:text="@string/ProjectTwo"
+        android:layout_gravity="center_vertical|center_horizontal"
         android:id="@+id/button2" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
+        style="@style/ButtonStyle"
+
+        android:text="@string/ProjectThree"
         android:id="@+id/button3"
-        android:layout_gravity="center_horizontal" />
+
+        android:layout_gravity="center_vertical|center_horizontal" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
+        style="@style/ButtonStyle"
+
+        android:text="@string/ProjectFour"
         android:id="@+id/button4"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_vertical|center_horizontal" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
+        style="@style/ButtonStyle"
+
+        android:text="@string/ProjectFive"
         android:id="@+id/button5"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_vertical|center_horizontal" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="#e67e22"
+        android:text="@string/CapstoneProject"
         android:id="@+id/button6"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_vertical|center_horizontal" />
 </LinearLayout>
