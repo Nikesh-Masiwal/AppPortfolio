@@ -25,20 +25,31 @@
         android:gravity="center"
         />
 
+    <LinearLayout
 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+
+        >
     <Button
         style="@style/ButtonStyle"
-
         android:text="@string/ProjectOne"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:id="@+id/streamBtn" />
+        android:id="@+id/streamBtn"
+        android:layout_weight="0.3"
+        android:layout_margin="2dp" />
 
     <Button
         style="@style/ButtonStyle"
 
         android:text="@string/ProjectTwo"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:id="@+id/scoresBtn" />
+        android:id="@+id/scoresBtn"
+        android:layout_weight="0.3"
+        />
 
     <Button
         style="@style/ButtonStyle"
@@ -46,13 +57,28 @@
         android:text="@string/ProjectThree"
         android:id="@+id/libraryBtn"
 
-        android:layout_gravity="center_vertical|center_horizontal" />
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="0.3"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+
+        >
 
     <Button
         style="@style/ButtonStyle"
 
         android:text="@string/ProjectFour"
         android:id="@+id/biggerBtn"
+        android:layout_weight="0.5"
         android:layout_gravity="center_vertical|center_horizontal" />
 
     <Button
@@ -60,7 +86,13 @@
 
         android:text="@string/ProjectFive"
         android:id="@+id/baconBtn"
+        android:layout_weight="0.5"
         android:layout_gravity="center_vertical|center_horizontal" />
+
+
+
+
+        </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
@@ -71,4 +103,5 @@
         android:text="@string/CapstoneProject"
         android:id="@+id/captoneBtn"
         android:layout_gravity="center_vertical|center_horizontal" />
+
 </LinearLayout>
